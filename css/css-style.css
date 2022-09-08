@@ -258,7 +258,7 @@ body {
   position: relative;
 }
 .main__right img {
-  width: 35vw;
+  height: 75vh;
   position: absolute;
   filter: drop-shadow(0px 0px 6px #ffffff);
   -webkit-filter: drop-shadow(0px 0px 6px #ffffff);
