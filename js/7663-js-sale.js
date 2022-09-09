@@ -97,8 +97,8 @@ const connect= async (e)=> {
 	    const price = await contract.methods.PUBLIC_SALE_PRICE().call();
 
       if (paused) { document.getElementById("phase").innerHTML = "CONTRACT IS PAUSED"; }
-	  else { if (WL) { document.getElementById("phase").innerHTML = "MINT IS OPEN | MAX " + maxPerTx + " PER TRX"; }
-	  else { document.getElementById("phase").innerHTML = "MINT IS OPEN | MAX " + maxPerTx + " PER TRX"; }
+	  else { if (WL) { document.getElementById("phase").innerHTML = "MINT IS OPEN | MAX " + maxPerTx + " PER WALLET"; }
+	  else { document.getElementById("phase").innerHTML = "MINT IS OPEN | MAX " + maxPerTx + " PER WALLET"; }
 	  }
 
 	  document.getElementById("tokens_available").innerHTML = totalSupply + " / " + "5000";
