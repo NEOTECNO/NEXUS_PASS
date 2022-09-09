@@ -97,8 +97,8 @@ const connect= async (e)=> {
 	    const price = await contract.methods.PUBLIC_SALE_PRICE().call();
 
       if (paused) { document.getElementById("phase").innerHTML = "CONTRACT IS PAUSED"; }
-	  else { if (WL) { document.getElementById("phase").innerHTML = "WHITELIST MINT | MAX " + maxPerTx + " PER TRX"; }
-	  else { document.getElementById("phase").innerHTML = "PUBLIC MINT | MAX " + maxPerTx + " PER TRX"; }
+	  else { if (WL) { document.getElementById("phase").innerHTML = "MINT IS OPEN | MAX " + maxPerTx + " PER TRX"; }
+	  else { document.getElementById("phase").innerHTML = "MINT IS OPEN | MAX " + maxPerTx + " PER TRX"; }
 	  }
 
 	  document.getElementById("tokens_available").innerHTML = totalSupply + " / " + "5000";
@@ -220,8 +220,6 @@ const signatures = [
   '0x16c9eee9575d4d9508289a37da3a90064263b47a3a459f4a08b371a34d04a3fc477b37082fea28c6779b457a61f6594921e1dd79b436050c3615ba8a9d4dc4e21b',
   '0x17921B58902a5EB485eEba82fB93Ae9A5B38F0fa',
   '0x7d6b8e0a0dcd57489ce3243940d07eec279684c5b9fae01785a12eeb4597e70e500116e2a373adf4d1125edf2021985871b0e1d35d5cc63651ae32436512925e1b',
-  '0xbfc63b805176BC32f796669A9C5e5DEA4797865a',
-  '0xdd8d6a4645b85c08ac3a044600692b9b15a677fa5e293ac58af264c53e97d21174826c3745ffb1883d663e8f0800c13c400426a4914ff6de1b47cf6b7b815ec41b',
   '0xB54A407B18e5f36D15E7208D27752dB68d4085eA',
   '0x44ff9034e9ebe1d4b11034b2cba2e95f67173416efb2431d3aa4031371bb33c01afcfa2d16ca652ae9898a0b34270d1d4c54c4711bcb674efc7c16974a011d8e1c',
   '0xf187B56ff92BeaF75dA2Ed2C7F1d77781EEc6Dce',
